@@ -18,4 +18,9 @@ public class ResourceDTO {
     @JsonView({Views.Write.class})
     private Integer onWrite;
 
+    @JsonView({Views.Read.class})
+    private String noAnnotation;
+
+    @JsonView({Views.Read_Minimal.class})
+    private String minimal;
 }

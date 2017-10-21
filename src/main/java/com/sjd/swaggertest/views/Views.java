@@ -1,12 +1,16 @@
 package com.sjd.swaggertest.views;
 
-public class Views {
-    
-    public static class Read {
+public interface Views {
+
+    public static interface Read_Minimal {
 
     }
 
-    public static class Write {
+    public static interface Read extends Read_Minimal {
+
+    }
+
+    public static interface Write {
 
     }
 }
